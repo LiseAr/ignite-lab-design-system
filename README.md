@@ -1,1 +1,1 @@
-# Projeto do curso de Design System da Rocketseat.
+Projeto do curso de Design System da Rocketseat.
