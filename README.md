@@ -1,1 +1,1 @@
-# ignit-lab-design-system
+# Projeto do curso de Design System da Rocketseat.
