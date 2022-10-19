@@ -11,7 +11,7 @@
     "storybook": "start-storybook -p 6006",
     "build-storybook": "build-storybook",
     "deploy-storybook": "storybook-to-ghpages",
-    "heroku-postbuild": "npm run build"
+    "heroku-postbuild": "npm run start"
   },
   "dependencies": {
     "@radix-ui/react-checkbox": "^1.0.1",
