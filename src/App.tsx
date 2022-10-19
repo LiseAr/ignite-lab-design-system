@@ -15,17 +15,19 @@ function App() {
         <Logo />
 
         <Heading size="lg" className="mt-4">
-          Ignite Lab
+         <Heading className="mt-4 text-sky-900"> Lz </Heading> <Heading className="mt-4 text-sky-700">Lab</Heading>
         </Heading>
         
-        <Text size="lg" className="text-gray-400 mt-1">
-          Faça login e começe a usar!
+        <Text size="sm" className="text-gray-400 mt-1">
+          Entre com seu e-mail para acessar a plataforma
         </Text>
       </header>
 
-      <form className="flex flex-col gap-4 items-stretch w-full max-w-sm mt-10">
-        <label htmlFor="email" className="flex flex-col gap-3">
-          <text className="font-semibold">Endereço de e-mail</text>
+      <form className="flex flex-col gap-4 items-stretch w-full max-w-sm mt-10" onSubmit={(e) => {
+          e.preventDefault()
+        }}>
+        <label htmlFor="email" className="flex flex-col gap-3 text-sky-600">
+          <Text size="sm" className="font-semibold text-sky-900">Endereço de e-mail</Text>
           <TextInput.Root>
             <TextInput.Icon>
               <Envelope/>
@@ -34,31 +36,10 @@ function App() {
           </TextInput.Root>
         </label>
 
-        <label htmlFor="password" className="flex flex-col gap-3" >
-          <text className="font-semibold">Sua senha</text>
-          <TextInput.Root>
-            <TextInput.Icon>
-              <Lock/>
-            </TextInput.Icon>
-            <TextInput.Input type="password" id="password" placeholder="********"/>
-          </TextInput.Root>
-        </label>
-
-        <label htmlFor="remember" className="flex items-center gap-2">
-          <Checkbox id="remember" />
-          <Text size="sm" className="text-gray-200 cursor-pointer">Lembrar de mim por 30 dias</Text>
-        </label>
-
-        <Button type="submit" className="mt-4">Entrar na plataforma</Button>
+        <Button type="submit" className="mt-4 text-sky-200 hover:text-sky-300">Entrar na plataforma</Button>
       </form>
 
       <footer className="flex flex-col items-center gap-4 mt-8">
-        <Text asChild size="sm">
-          <a href="" className="text-gray-400 underline hover:text-gray-200">Esqueceu sua senha?</a>
-        </Text>
-        <Text asChild size="sm">
-          <a href="" className="text-gray-400 underline hover:text-gray-200">Não possui conta? Crie agora?</a>
-        </Text>
       </footer>
     </div>
   );
