@@ -5,11 +5,9 @@
   "version": "0.0.0",
   "type": "module",
   "scripts": {
-    "tsc": "tsc",
-    "postinstall": "npm run tsc",
     "dev": "vite",
     "start": "npm run build",
-    "build": "tsc && vite build",
+    "build": "npx --package=typescript -- tsc && vite build",
     "preview": "vite preview",
     "storybook": "start-storybook -p 6006",
     "build-storybook": "build-storybook",
