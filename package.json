@@ -7,12 +7,12 @@
   "scripts": {
     "dev": "vite",
     "tsc": "tsc",
-    "postinstall": "tsc",
+    "postinstall": "npm run tsc",
     "preview": "vite preview",
     "storybook": "start-storybook -p 6006",
     "build-storybook": "build-storybook",
     "deploy-storybook": "storybook-to-ghpages",
-    "start": "npm run tsc && vite build"
+    "start": "vite build"
   },
   "dependencies": {
     "@radix-ui/react-checkbox": "^1.0.1",
