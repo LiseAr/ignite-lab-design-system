@@ -5,6 +5,8 @@
   "version": "0.0.0",
   "type": "module",
   "scripts": {
+    "tsc": "tsc",
+    "postinstall": "npm run tsc",
     "dev": "vite",
     "start": "tsc && vite build",
     "preview": "vite preview",
