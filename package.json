@@ -6,6 +6,7 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
+    "tsc": "tsc",
     "postinstall": "tsc",
     "preview": "vite preview",
     "storybook": "start-storybook -p 6006",
