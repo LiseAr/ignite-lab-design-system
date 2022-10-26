@@ -1,7 +1,18 @@
 interface LogoProps extends React.SVGAttributes<HTMLOrSVGElement> {}
 
 export function Logo(props: LogoProps) {
-    return (
+  return (
+    <div
+      className="
+        hover:rotate-[720deg]
+        hover:translate-y-[100%]
+        hover:skew-x-[30deg]
+        hover:scale-y-[2.30]
+        hover:scale-x-[2.2]
+        transition-transform 
+        duration-[1000ms]
+      "
+    >
       <svg
         width={192}
         height={154}
@@ -39,8 +50,6 @@ export function Logo(props: LogoProps) {
           strokeLinejoin="round"
         />
       </svg>
-    )
-  }
-  
-
-
+    </div>
+  );
+}

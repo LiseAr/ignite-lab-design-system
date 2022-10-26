@@ -1,6 +1,38 @@
 @tailwind base;
+
+
+
+/* Firefox */
+* {
+    scrollbar-width: thin;
+    scrollbar-color: #202024 #121214;
+  }
+  
+  /* Chrome, Edge, and Safari */
+  *::-webkit-scrollbar {
+    width: 15px;
+  }
+
+  *::-webkit-scrollbar-thumb:hover {
+    background: #202024;
+  }
+  
+  *::-webkit-scrollbar-track {
+    background: #121214;
+    opacity: 0;
+  }
+  
+  *::-webkit-scrollbar-thumb {
+    background-color: #202024a1;
+    border-radius: 14px;
+    border: 3px solid #121214;
+    opacity: 0;
+  }
+  
+
 @tailwind components;
 @tailwind utilities;
+
 
 input:-webkit-autofill,
 input:-webkit-autofill:hover, 
