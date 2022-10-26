@@ -5,7 +5,7 @@ import { Login } from './pages/Login'
 import './styles/global.css'
 
 function App() {
-  const [page, setPage] = useState('home')
+  const [page, setPage] = useState('login')
 
   const renderPage = () => {
     switch (page) {
