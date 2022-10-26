@@ -1,6 +1,6 @@
 // framework minimalista para nodejs
 import express from 'express'
-import { resolve } from 'path'
+import path, { resolve } from 'path'
 import { fileURLToPath } from 'url'
 
 const app = express()
